@@ -1,42 +1,32 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
     <title>My Website</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
   </head>
   <body>
-    <header>
-      <h1>Welcome to My Website. Bienvenu</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html" target="_self">Home</a></li>
-          <li><a href="about.html" target="_blank">About</a></li>
-          <li><a href="contact.html" target="_blank">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section>
-        <h2>About</h2>
-        <p>This is my website.</p>
-      </section>
-      <section>
-        <h2>Contact</h2>
-        <form>
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name">
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email">
-          <label for="message">Message:</label>
-          <textarea id="message" name="message"></textarea>
-          <button type="submit">Send</button>
-        </form>
-      </section>
-    </main>
-    <footer>
-      <p>&copy; 2023 My Website</p>
-    </footer>
-    <script src="script.js"></script>
+    <nav>
+      <ul>
+        <li><a href="#home" onclick="showImage('home')">Home</a></li>
+        <li><a href="#about" onclick="showImage('about')">About</a></li>
+        <li><a href="#contact" onclick="showImage('contact')">Contact</a></li>
+        <li><a href="#products" onclick="showImage('products')">Products</a></li>
+      </ul>
+    </nav>
+    <div class="container">
+      <div id="home" class="image-container">
+        <img src="home.jpg" alt="Home Image">
+      </div>
+      <div id="about" class="image-container">
+        <img src="about.jpg" alt="About Image">
+      </div>
+      <div id="contact" class="image-container">
+        <img src="contact.jpg" alt="Contact Image">
+      </div>
+      <div id="products" class="image-container">
+        <img src="products.jpg" alt="Products Image">
+      </div>
+    </div>
   </body>
 </html>

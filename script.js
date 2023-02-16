@@ -1,4 +1,10 @@
-const nameInput = document.getElementById("name");
-nameInput.addEventListener("input", function() {
-  console.log("Name changed to: " + nameInput.value);
-});
+function showImage(id) {
+  const imageContainers = document.querySelectorAll('.image-container');
+  imageContainers.forEach((container) => {
+    if (container.id === id) {
+      container.style.display = 'block';
+    } else {
+      container.style.display = 'none';
+    }
+  });
+}
